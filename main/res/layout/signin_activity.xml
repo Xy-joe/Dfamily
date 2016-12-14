@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="ADMINISTRATOR"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#202020"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:paddingLeft="18dp"
+        android:textColor="#202020"
+        android:hint="Full Name"
+        android:textColorHint="#fb2fd384"
+        android:ems="10"
+        android:id="@+id/fullname"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:paddingLeft="18dp"
+        android:hint="Userame"
+        android:textColorHint="#fb2fd384"
+        android:textColor="#202020"
+        android:ems="10"
+        android:id="@+id/unameid"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:paddingLeft="18dp"
+        android:textColorHint="#fb2fd384"
+        android:textColor="#202020"
+        android:hint="PassWord"
+        android:ems="10"
+        android:id="@+id/passid2"
+        android:layout_gravity="center_horizontal" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Confirm PassWord"
+        android:paddingLeft="18dp"
+        android:textColorHint="#fb2fd384"
+        android:textColor="#202020"
+        android:ems="10"
+        android:id="@+id/confpass3"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:hint="Gender"
+        android:textColor="#202020"
+        android:textColorHint="#fb2fd384"
+        android:ems="10"
+        android:id="@+id/genderid"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:textColorHint="#fb2fd384"
+        android:paddingLeft="18dp"
+        android:textColor="#202020"
+        android:hint="email"
+        android:id="@+id/emailid"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="phone"
+        android:textColorHint="#fb2fd384"
+        android:paddingLeft="18dp"
+        android:ems="10"
+        android:textColor="#202020"
+        android:hint="Phone"
+        android:id="@+id/phoneid"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="activate"
+        android:textStyle="bold"
+        android:id="@+id/create"
+        android:background="#fb2fd384"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:textColor="#202020"
+        android:text="Already a member?"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textStyle="bold"
+        android:background="#fb2fd384"
+        android:id="@+id/logtv"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

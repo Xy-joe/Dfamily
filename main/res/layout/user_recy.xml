@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lightedcode.dfamily.UserActivity"
+    android:background="#f1f5f8"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/userlayout">
+
+    <Button
+        android:id="@+id/timebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timelime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="14dp" />
+    <Button
+        android:id="@+id/aboutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:paddingLeft="19dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/aboutbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/profile_layout"
+        android:orientation="vertical"
+        android:background="#dd0000">
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recycler_view_for_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+</android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/about_view"
+            android:orientation="vertical"
+            android:background="#0000ff">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                 android:layout_marginTop="15dp"
+                android:elevation="3dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:paddingTop="@dimen/album_title_padding"
+                    android:textColor="#212121"
+                    android:textStyle="normal"
+                    android:textSize="15dp" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="your email"
+                       android:id="@+id/email"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:paddingTop="@dimen/album_title_padding"
+                    android:textColor="#212121"
+                       android:layout_below="@+id/name"
+                    android:textStyle="normal"
+                    android:textSize="15dp" />
+                    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="15dp"
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/ppho"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:src="@android:drawable/ic_menu_call"
+                    android:layout_toRightOf="@id/ppho"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="58dp"
+                    android:id="@+id/imageView2"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/optio"
+                    android:layout_width="@dimen/ic_album_overflow_width"
+                    android:layout_height="@dimen/ic_album_overflow_height"
+                    android:layout_below="@+id/imageView2"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_add"
+                    android:layout_alignParentEnd="true"
+
+
+                    />
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

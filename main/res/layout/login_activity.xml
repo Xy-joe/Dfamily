@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@raw/f4">
-
+    android:layout_height="match_parent">
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#99b286"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+-->
     <ImageView
-        android:id="@+id/image1"
         android:layout_width="116dp"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_height="72dp"
@@ -19,7 +23,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingTop="20dp"
         android:text="Welcome to the No.1 Family app Stay connected with the members of your family from anywhere"
         android:textSize="23dp"
         android:textStyle="bold"
@@ -28,15 +32,15 @@
 
         android:id="@+id/textView"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.11" />
+        android:layout_weight="0.02" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:layout_below="@+id/textView"
         android:textColorHint="#40ed11"
-        android:hint="Username"
+        android:hint="Enter email "
         android:textColor="#40ed11"
         android:paddingLeft="18dp"
 
@@ -48,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="Password"
+        android:hint="Enter password"
         android:textColorHint="#40ed11"
         android:paddingLeft="18dp"
         android:ems="10"
@@ -59,8 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:text="forgotten password ?"
-        android:textColor="#ffffff"
-        android:id="@+id/textView2"
+        android:textColor="#212121"
         android:layout_gravity="center_horizontal" />
     <Button
         android:layout_width="wrap_content"
@@ -69,14 +72,19 @@
         android:layout_gravity="center_horizontal"
         android:background="#fb2fd384"
         android:id="@+id/log"
-        android:text="LogIn"/>
+        android:onClick="forgotpassword"
+        android:text="Login"/>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="16dp"
+        android:background="#2a334f">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign up with a new account ?"
+        android:text="Become a new member ?"
         android:textSize="16dp"
         android:textColor="#fb2fd384"
         android:textStyle="bold"
@@ -88,10 +96,13 @@
     <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Sign in"
+        android:text="New Account"
         android:background="#fb2fd384"
         android:textStyle="bold"
         android:id="@+id/sign"
-        android:layout_toRightOf="@+id/textView4" />
+        android:layout_toRightOf="@+id/textView4"
+        android:paddingLeft="40dp"
+        android:paddingRight="20dp"
+        />
     </RelativeLayout>
 </LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/user_recy">
+
+
+    
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@raw/gg"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:id="@+id/upload"
+                android:layout_centerHorizontal="true" />
+
+
+
+            <TextView
+                android:id="@+id/msgtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upload"
+                android:layout_marginTop="39dp"
+                android:text="Harvest"
+                android:textColor="#212121"
+                android:textStyle="normal"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/post"
+                android:layout_below="@+id/msgtitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_cover_height"
+                android:paddingLeft="20dp"
+                android:text="MMM News"
+                android:hint="What story do you want to share today ?"
+                android:textStyle="normal"
+                android:textAlignment="inherit"
+                android:background="@color/colorText"
+                android:scaleType="fitXY" />
+
+
+            <ImageView
+                android:id="@+id/optio"
+                android:layout_width="@dimen/ic_album_overflow_width"
+                android:layout_height="@dimen/ic_album_overflow_height"
+                android:layout_below="@+id/post"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_list"
+                android:layout_alignParentStart="true"
+
+
+                 />
+            <ImageView
+                android:id="@+id/goption"
+                android:layout_width="@dimen/ic_album_overflow_width"
+                android:layout_height="@dimen/ic_album_overflow_height"
+                android:layout_below="@+id/post"
+                android:scaleType="centerCrop"
+                android:layout_alignParentEnd="true"
+                android:src="@android:drawable/ic_menu_gallery"
+                 />
+
+            <Button
+                android:text="share"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/post"
+                android:background="@color/colorPrimary"
+                android:layout_alignEnd="@+id/optio"
+                android:id="@+id/sharebutton" />
+
+            <Button
+                android:text="cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@+id/post"
+                android:background="@color/colorPrimary"
+                android:layout_alignEnd="@id/sharebutton"
+                android:id="@+id/cancelbutton" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

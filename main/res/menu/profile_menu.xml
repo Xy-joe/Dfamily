@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/remove"
+        android:orderInCategory="100"
+        android:title="Delete" />
+
+    <item
+        android:id="@+id/view"
+        android:orderInCategory="101"
+        android:title="View Profile" />
+    <item
+        android:id="@+id/msg"
+        android:orderInCategory="101"
+        android:title="Send Message" />
+    <item
+        android:id="@+id/call"
+        android:orderInCategory="101"
+        android:title="call" />
+</menu>

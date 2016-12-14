@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/gallery"
+        android:orderInCategory="100"
+        android:title="Gallery"
+        android:icon="@android:drawable/ic_menu_gallery"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/camera"
+        android:orderInCategory="101"
+        app:showAsAction="collapseActionView"
+        android:visible="true"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Camera"/>
+
+
+</menu>

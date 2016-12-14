@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lightedcode.family">
+    package="com.lightedcode.dfamily">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_face_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".Dfamily">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -21,12 +32,31 @@
         <activity
             android:name=".Login"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Signin"
+            android:label="@string/app_name"
+            android:parentActivityName=".Login"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Homepage"
+            android:label="@string/app_name"
+            android:parentActivityName=".Login"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".UserActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".Homepage"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Wall_activity"
+            android:label="@string/title_activity_wall_activity"
+            android:parentActivityName=".UserActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lightedcode.dfamily.UserActivity" />
         </activity>
     </application>
 
